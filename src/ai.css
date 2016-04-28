@@ -31,67 +31,40 @@
     background-color: rgba(0,0,0,0.3);
 }
 
-.spinner1{
+.spinner{
     -webkit-animation: infinite-spinning 1s infinite linear;
     animation: infinite-spinning 1s infinite linear;
-    width: 50px;
-    min-height: 50px;
+    width: 100px;
+    min-height: 100px;
     margin: auto;
     padding-bottom: 250px;
+    margin-top: 10%;
+    display: block;
+}
+
+.s001{
     background: url(./ac1.png) no-repeat center;
     background-size: contain;
-    margin-top: 10%;
-    display: block;
 }
-
-.spinner2{
-    -webkit-animation: infinite-spinning 1s infinite linear;
-    animation: infinite-spinning 1s infinite linear;
-    width: 50;
-    min-height: 50;
-    margin: auto;
-    padding-bottom: 250px;
+.s002{
     background: url(./ac2.png) no-repeat center;
     background-size: contain;
-    margin-top: 10%;
-    display: block;
 }
-
-.spinner3{
-    -webkit-animation: infinite-spinning 1s infinite linear;
-    animation: infinite-spinning 1s infinite linear;
-    width: 50;
-    min-height: 50;
-    margin: auto;
-    padding-bottom: 250px;
+.s003{
     background: url(./ac3.png) no-repeat center;
     background-size: contain;
-    margin-top: 10%;
-    display: block;
 }
-.spinner4{
-    -webkit-animation: infinite-spinning 1s infinite linear;
-    animation: infinite-spinning 1s infinite linear;
-    width: 50;
-    min-height: 50;
-    margin: auto;
-    padding-bottom: 250px;
+.s004{
     background: url(./ac4.png) no-repeat center;
     background-size: contain;
-    margin-top: 10%;
-    display: block;
 }
-.spinner5{
-    -webkit-animation: infinite-spinning 1s infinite linear;
-    animation: infinite-spinning 1s infinite linear;
-    width: 50;
-    min-height: 50;
-    margin: auto;
-    padding-bottom: 250px;
+.s005{
     background: url(./ac5.png) no-repeat center;
     background-size: contain;
-    margin-top: 10%;
-    display: block;
+}
+.s006{
+    background: url(./ac6.png) no-repeat center;
+    background-size: contain;
 }
 
 a{
@@ -126,8 +99,8 @@ h2{
 }
 
 .open{
-    -webkit-transition: border 0.5s, border-radius 0.5s, background-color 0.5s, color 0.5s;
-    transition: border 0.5s, border-radius 0.5s, background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
     
     padding: 15px;
     margin: 15px;
@@ -139,19 +112,12 @@ h2{
 }
 
 .open:hover{
-    padding: 15px;
-    margin: 15px;
-    font-family: caf__breweryregular;
-    color: green;
-    text-decoration: underline;
-    background: lightgreen;
-    border: solid green 2px;
-    border-radius: 5px;
+    background-color: lightgreen;
 }
 
 .close {
-    -webkit-transition: border 0.5s, border-radius 0.5s, background-color 0.5s, color 0.5s;
-    transition: border 0.5s, border-radius 0.5s, background-color 0.5s;
+    -webkit-transition:background-color 0.5s;
+    transition: background-color 0.5s;
     
     padding: 15px;
     margin: 15px;
@@ -163,13 +129,7 @@ h2{
 }
 
 .close:hover{
-    padding: 15px;
-    margin: 15px;
-    font-family: caf__breweryregular;
-    color: #ff66a3;
     background-color: #ff99c2;
-    border: solid #ff66a3 2px;
-    border-radius: 5px;
 }
 @font-face {
     font-family: 'caf__breweryregular';
