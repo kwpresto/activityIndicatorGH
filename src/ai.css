@@ -31,13 +31,64 @@
     background-color: rgba(0,0,0,0.3);
 }
 
-.spinner{
+.spinner1{
     -webkit-animation: infinite-spinning 1s infinite linear;
     animation: infinite-spinning 1s infinite linear;
     width: 50px;
     min-height: 50px;
     margin: auto;
-    background: url(./ac.png) no-repeat center;
+    padding-bottom: 250px;
+    background: url(./ac1.png) no-repeat center;
+    background-size: contain;
+    margin-top: 10%;
+    display: block;
+}
+
+.spinner2{
+    -webkit-animation: infinite-spinning 1s infinite linear;
+    animation: infinite-spinning 1s infinite linear;
+    width: 50;
+    min-height: 50;
+    margin: auto;
+    padding-bottom: 250px;
+    background: url(./ac2.png) no-repeat center;
+    background-size: contain;
+    margin-top: 10%;
+    display: block;
+}
+
+.spinner3{
+    -webkit-animation: infinite-spinning 1s infinite linear;
+    animation: infinite-spinning 1s infinite linear;
+    width: 50;
+    min-height: 50;
+    margin: auto;
+    padding-bottom: 250px;
+    background: url(./ac3.png) no-repeat center;
+    background-size: contain;
+    margin-top: 10%;
+    display: block;
+}
+.spinner4{
+    -webkit-animation: infinite-spinning 1s infinite linear;
+    animation: infinite-spinning 1s infinite linear;
+    width: 50;
+    min-height: 50;
+    margin: auto;
+    padding-bottom: 250px;
+    background: url(./ac4.png) no-repeat center;
+    background-size: contain;
+    margin-top: 10%;
+    display: block;
+}
+.spinner5{
+    -webkit-animation: infinite-spinning 1s infinite linear;
+    animation: infinite-spinning 1s infinite linear;
+    width: 50;
+    min-height: 50;
+    margin: auto;
+    padding-bottom: 250px;
+    background: url(./ac5.png) no-repeat center;
     background-size: contain;
     margin-top: 10%;
     display: block;
@@ -49,41 +100,86 @@ a{
 
 p{
     text-align: justify;
-    font-size: 12px;
+    font-size: 20px;
+}
+
+ol{
+    text-align: justify;
 }
 
 body{
     text-align: center;
-    font-size: 10px;
+    font-size: 20px;
+    font-family: caf__breweryregular;
 }
 
 h1{
     text-decoration: underline;
     text-transform: uppercase;
-    font-size: 24px;
-    font-family: verdana;
+    font-size: 50px;
+    font-family: caf__breweryregular;
 }
 
 h2{
-    font-size: 18px;
-    font-family: verdana;
+    font-size: 20px;
+    font-family: caf__breweryregular; 
 }
 
-.button{
-    background: lightgreen;
+.open{
+    -webkit-transition: border 0.5s, border-radius 0.5s, background-color 0.5s, color 0.5s;
+    transition: border 0.5s, border-radius 0.5s, background-color 0.5s;
+    
     padding: 15px;
-    border: 2px solid green;
-    border-radius: 25px;
     margin: 15px;
-    font-family: "comic sans ms";
-    color: green;
+    font-family: caf__breweryregular;
+    color: black;
+    background-color: none;
+    border: solid black 2px;
+    border-radius: 5px;
 }
 
-.button:hover{
-    background: #47d147;
+.open:hover{
     padding: 15px;
-    border: 2px solid green;
-    border-radius: 25px;
-    font-family: "comic sans ms";
-    color: white;
+    margin: 15px;
+    font-family: caf__breweryregular;
+    color: green;
+    text-decoration: underline;
+    background: lightgreen;
+    border: solid green 2px;
+    border-radius: 5px;
+}
+
+.close {
+    -webkit-transition: border 0.5s, border-radius 0.5s, background-color 0.5s, color 0.5s;
+    transition: border 0.5s, border-radius 0.5s, background-color 0.5s;
+    
+    padding: 15px;
+    margin: 15px;
+    font-family: caf__breweryregular;
+    color: black;
+    background-color: lightgray;
+    border: solid black 2px;
+    border-radius: 5px;
+}
+
+.close:hover{
+    padding: 15px;
+    margin: 15px;
+    font-family: caf__breweryregular;
+    color: #ff66a3;
+    background-color: #ff99c2;
+    border: solid #ff66a3 2px;
+    border-radius: 5px;
+}
+@font-face {
+    font-family: 'caf__breweryregular';
+    src: url('cafe--brewery-webfont.eot');
+    src: url('cafe--brewery-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cafe--brewery-webfont.woff2') format('woff2'),
+         url('cafe--brewery-webfont.woff') format('woff'),
+         url('cafe--brewery-webfont.ttf') format('truetype'),
+         url('cafe--brewery-webfont.svg#caf__breweryregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }

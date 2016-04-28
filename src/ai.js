@@ -1,6 +1,6 @@
 var AI = {
-    show: function(){
-        var mu = "<div class='fadeBox'> <div class='spinner'> </div> </div>";
+    show: function(num){
+        var mu = "<div class='fadeBox'><div class='spinner" + num + "'></div><a class='close' href='javascript:AI.hide()'>Done</a></div>";
         document.body.innerHTML += mu;
     },
     hide: function(){
